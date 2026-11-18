@@ -75,4 +75,4 @@ site-75775484b-xsl4q   1/1     Running   0          7s      10.42.1.7   k3d-lab-
     > J’ai déployé les mêmes fichiers dans prod. Les deux déploiements site ont le même nom, mais chacun a ses trois pods dans son propre namespace. J’ai retrouvé default et prod dans Portainer.
 ---
 
-**Score obtenu avec `./scripts/check.sh` :**  Score : 15 / 18 
+**Score obtenu avec `./scripts/check.sh` :**  Score : 18/ 18 
