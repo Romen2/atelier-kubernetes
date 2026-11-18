@@ -44,12 +44,12 @@
 ## Exercice 5 — Scaling & mises à jour
 
 9. Sur quels nœuds se trouvent vos 3 réplicas ? Collez la sortie de `kubectl get pods -l app=site -o wide`.
-   ```
+   ``
    NAME                   READY   STATUS    RESTARTS   AGE     IP          NODE               NOMINATED NODE   READINESS GATES
 site-75775484b-77ztl   1/1     Running   0          7s      10.42.0.5   k3d-lab-agent-0    <none>           <none>
 site-75775484b-7vw9c   1/1     Running   0          9m24s   10.42.2.8   k3d-lab-server-0   <none>           <none>
 site-75775484b-xsl4q   1/1     Running   0          7s      10.42.1.7   k3d-lab-agent-1    <none>           <none>
-   ```
+   ``
 
 10. Avec l'image `nginx:9.99`, quel statut avait le pod ? Quelle commande vous a donné la cause ?
     > Le nouveau pod était en ImagePullBackOff. La commande kubectl describe pod m’a donné la cause dans la partie Events. L’image nginx:9.99 était introuvable.
